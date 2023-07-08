@@ -356,3 +356,16 @@ form input, form textarea{
 .copyright{
     margin: 15px;
 }
+
+/*--Header responsive code--- */
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
