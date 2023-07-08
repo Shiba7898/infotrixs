@@ -63,6 +63,11 @@ nav ul li a:hover{
     font-size: 3rem;
 }
 
+.rightSection img{
+    width: 100%;
+    margin: 50px 0;
+}
+
 .leftSection .buttons{
     padding: 50px 0;
 }
@@ -85,11 +90,185 @@ nav ul li a:hover{
     color: rgb(116, 85, 98);
 }
 
+/* about me */
+
+.about-me-card {
+    background-color: rgb(0,0,33);
+   
+    margin: 5%;
+}
+
+
+.about-me-heading {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding:  15px;
+    margin: 20px;
+}
+
+.about-me-pic{
+    background-size: cover;
+    max-width: 15%;
+    float: right;
+    border: 3px solid ;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.portfolio-about-me-pic {
+    height: 80vh;
+    background-size: cover;
+    width: 40%;
+}
+
+.portfolio-about-me-description {
+    color: #9aa5b1;
+    font-size: 20px;
+}
+
+/*---- servives ----- */
+
+.skills-heading {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding:  15px 15px;
+    margin: 20px;
+}
+
+.skills-pic{
+    width: 50%;
+    padding: 20px;
+    grid-gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -50px;
+}
+
+#services{
+    padding: 30px 0;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px 20px;
+    margin: 15px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div a{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    background: #7700ff;
+    transform: translate(-10px);
+}
+
+
+/*---- project ----*/
+
+.sub-title{
+   margin: 15px;
+   font-weight: bold;
+}
+
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: block;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 100%;
+    background: (rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.btn2{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    background: #1e2167;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
 
 /*-----contact section */
 
 .contact-left{
     flex-basis: 35%;
+    margin: 25px;
 }
 
 .contact-right{
@@ -97,6 +276,7 @@ nav ul li a:hover{
     justify-content: center;
     position: relative;
 }
+
 
 .contact-form{
     justify-content: center;
@@ -173,213 +353,6 @@ form input, form textarea{
     justify-content: center;
 }
 
-
-/* skills & about me */
-
-.about-me-card {
-    background-color: rgb(0,0,33);
-    padding: 20px 25px;
-    margin-left: 25px;
-}
-
-
-.about-me-heading {
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    padding:  15px;
-    margin: 20px;
-}
-
-.about-me-pic{
-    background-size: cover;
-    max-width: 320px;
-    float: right;
-    border: 3px solid ;
-    border-radius: 10px;
-    padding: 5px;
-}
-
-
-.portfolio-about-me-pic {
-    height: 80vh;
-    background-size: cover;
-    width: 40%;
-}
-
-.portfolio-about-me-description {
-    color: #9aa5b1;
-    font-size: 20px;
-}
-
-.skills-heading {
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    padding:  15px 15px;
-    margin: 20px;
-}
-
-/* ---project-section---*/
-
-.portfolio-card {
-    background-color: #3e4c59;
-    width: 90vh;
-    height: 240vh;
-}
-
-.portfolio-heading {
-    color: #cced00;
-    font-size: 25px;
-}
-
-.portfolio-para {
-    color: white;
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.royal-grand-card {
-    background-color: #323f4b;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.portfolio-img {
-    height: 40vh;
-    width: 70vh;
-    background-size: cover;
-}
-
-.hotel-link {
-    color: #cced00;
-}
-
-.web-design-heading {
-    color: #9aa5b1;
-    font-size: 20px;
-}
-
-.royal-grand-heading {
-    color: white;
-    font-size: 30px;
-    font-family: "Roboto";
-}
-
-.royal-grand-description {
-    color: #9aa5b1;
-    font-size: 20px;
-}
-
-
-
-/*---- servives ----- */
-#services{
-    padding: 30px 0;
-}
-
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.services-list div{
-    background: #262626;
-    padding: 40px 20px;
+.copyright{
     margin: 15px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
-}
-
-.services-list div a{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.services-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.services-list div:hover{
-    background: #7700ff;
-    transform: translate(-10px);
-}
-
-
-/*---- portfolio work ----*/
-#portfolio{
-    padding: 50px 0;
-}
-
-.work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.work{
-    border-radius: 10px;
-    position: relative;
-    overflow: block;
-}
-
-.work img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
-}
-
-.layer{
-    width: 100%;
-    height: 100%;
-    background: (rgba(0,0,0,0.6), #ff004f);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 40px;
-    text-align: center;
-    font-size: 14px;
-    transition: height 0.5s;
-}
-
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-
-.work:hover img{
-    transform: scale(1.1);
-}
-
-.btn2{
-    display: block;
-    margin: 50px auto;
-    width: fit-content;
-    padding: 14px 50px;
-    background: #1e2167;
-    text-decoration: none;
-    color: white;
-    border: 2px solid white;
-    border-radius: 6px;
-    font-size: 20px;
-    transition: background 0.5s;
-    cursor: pointer;
 }
